@@ -21,10 +21,10 @@ sudo pacman -S python-click python-yaml python-psutil grub squashfs-tools archis
 vi get_assemble.sh and copy paste lines between the ------ below in there
 
 ---------------------------------
-TEMP_ASSEMBLE_DIR="$(mktemp -d)"
+```TEMP_ASSEMBLE_DIR="$(mktemp -d)"
 git clone https://github.com/blend-os/assemble "${TEMP_ASSEMBLE_DIR}/assemble"
 sudo cp "${TEMP_ASSEMBLE_DIR}/assemble/assemble" /usr/local/bin
-rm -rf "${TEMP_ASSEMBLE_DIR}"
+rm -rf "${TEMP_ASSEMBLE_DIR}"```
 --------------------------------
 
 sh get_assemble.sh
